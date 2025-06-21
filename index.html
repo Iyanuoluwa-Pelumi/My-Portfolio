@@ -21,20 +21,30 @@
 
 <body>
     <!----------HEADER-------->
-    <header class="header-container">
+    <header class="header-container container" >
         <div class="nav-logo">
-            <p>Iyanuoluwa Pelumi</p>
+            <p><a href="./index.html">Iyanuoluwa Pelumi</a></p>
         </div>
 
-        <!-- Hamburger Checkbox -->
+        <!-- Hamburger Checkbox 
         <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
         <label for="menu-toggle" class="hamburger-btn"> 
             <span></span>
             <span></span>
             <span></span>
-        </label>
+        </label> -->
 
         <!-- Nav Menu -->
+
+        <ul class="sidebar">
+            <li onclick="hideSidebar ()"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg></li>
+            <li><a class="nav-list" href="./index.html">Home</a></li>
+            <li><a class="nav-list" href="#services">Services</a></li>
+            <li><a class="nav-list" href="#skills">Skills</a></li>
+            <li><a class="nav-list" href="#contact">Contact</a></li>
+        </ul>
 
         <ul class="nav-menu">
             <li><a class="nav-list" href="./index.html">Home</a></li>
@@ -42,6 +52,9 @@
             <li><a class="nav-list" href="#skills">Skills</a></li>
             <li><a class="nav-list" href="#contact">Contact</a></li>
         </ul>
+        <li onclick="showSidebar ()" class="hamburger-btn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg></li>
     </header>
     
     
@@ -88,13 +101,12 @@
                     Whether it's a landing page, dashboard, or full-blown web app, I enjoy
                     solving problems through clean code and attention to detail. I've
                     built personal and freelance projects that focus on speed, mobile-first
-                    design, and modern UI/UX principles. <br>
+                    design, and modern UI/UX principles. <br><br>
                     I'm currently open to remote job opportunities, freelance gigs, and
-                    collaborative tech projects. <br><br>
-                    I'm also building my presence in the dev community by sharing tips,
-                    tutorials, and lessons from my journey. <br>
+                    collaborative tech projects. I'm also building my presence in the dev community by sharing tips,
+                    tutorials, and lessons from my journey. <br><br>
                     Let's connect if you're looking to work with a developer who's eager,
-                    reliable, and always learning. <br>
+                    reliable, and always learning. <br><br>
                     <a id="hire-btn" href="https://wa.me/+2348104905360" target="_blank" rel="noopener noreferrer">Hire Me</a>
                 </p>
             </div>
@@ -201,14 +213,14 @@
                 <img src="./assets/cybersecurity.jpg" alt="cybersecurity img" class="blog-img" />
                 <div class="read">
                     <p class="read-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
                             <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5"/>
-                        </svg> May 15, 2025
+                        </svg> <small>May 15, 2025</small>
                     </p>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-                        </svg> 3 min. read.
+                        </svg> <small>3 min. read.</small>
                     </p>
                 </div>
                 <h5>Cybersecurity</h5>
@@ -221,14 +233,14 @@
                 <img src="./assets/frontend.jpg" alt="frontend img" class="blog-img" />
                 <div class="read">
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
                             <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5"/>
-                        </svg> 12 April, 2025
+                        </svg> <small>12 April, 2025</small>
                     </p>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-                        </svg> 3 min. read.
+                        </svg> <small>3 min. read.</small>
                     </p>
                 </div>
                 <h5>Frontend vs Backend Development</h5>
@@ -241,13 +253,13 @@
                 <img src="./assets/AI.jpg" alt="AI img" class="blog-img" />
                 <div class="read">
                     <p class="read-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">                         <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5"/>
-                      </svg> 12 Jan, 2025
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">                         <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5"/>
+                      </svg> <small>12 Jan, 2025</small>
                       </p>
                       <p>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
                               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-                          </svg> 5 min. read.
+                          </svg> <small>5 min. read.</small>
                       </p>
                   </div>
                   <h5>The Future of AI: How Artificial Intelligence Will Change the World</h5>
@@ -356,7 +368,7 @@
           </footer>
 
   
-      <!--<script src="index.js"></script> -->
+      <script src="index.js"></script>
   </body>
   </html>
   
