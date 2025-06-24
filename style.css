@@ -19,7 +19,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #03203f;
-  padding: 20px 40px;
+  padding: 10px 40px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -512,21 +512,24 @@ span{
   margin-bottom: 15px;
 }
 
-.blog-card h5 {
+.link-seo {
   font-size: 1.2rem;
   color: chocolate;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .read {
+  color: white;
   display: flex;
   gap: 10px;
 }
 
-.blog-card p {
+.link-text-seo {
   font-size: 0.95rem;
   color: #dddddd;
   line-height: 1.5;
+  text-decoration: none;
 }
 
 .blog-link {
@@ -842,7 +845,7 @@ accent-color: chocolate;
   }
 
   .blog-card img{
-    height: 70%;
+    height: 50%;
   }
  
  /*------------- CONTACT SECTION ---------*/
