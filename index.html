@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Iyanuoluwa Pelumi | Front-End Developer passionate about building responsive and elegant websites." />
+    <meta property="og:title" content="Iyanuoluwa Pelumi Portfolio" />
+    <meta property="og:description" content="Passionate front-end developer building stunning web experiences with React, HTML/CSS, and JS." />
+    <meta property="og:image" content="./assets/cartoon about nw.png" />
+    <meta name="author" content="Iyanuoluwa Pelumi" />
+    <title>Iyanuoluwa Pelumi</title>
+    <link rel="icon" type="image/x-icon" href="./assets/cartoon about nw.png">
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <!----------HEADER-------->
+    <header class="header-container container" >
+        <div class="nav-logo">
+            <p><a href="./index.html">PELLU<span>X</span></a></p>
+        </div>
+
+        <!----------- NAV MENU ---------->
+       <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar ()" class="menu-close"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg></li>
+            <li onclick="redirect ()"><a class="nav-list" href="./index.html">Home</a></li>
+            <li onclick="redirect ()"><a class="nav-list" href="#services">Services</a></li>
+            <li onclick="redirect ()"><a class="nav-list" href="#skills">Skills</a></li>
+            <li onclick="redirect ()"><a class="nav-list" href="#contact">Contact</a></li>
+        </ul>
+       </nav>
+
+       <nav>
+        <ul class="nav-menu">
+            <li><a class="nav-list" href="./index.html">Home</a></li>
+            <li><a class="nav-list" href="#services">Services</a></li>
+            <li><a class="nav-list" href="#skills">Skills</a></li>
+            <li><a class="nav-list" href="#contact">Contact</a></li>
+        </ul>
+        <li onclick="showSidebar ()" class="hamburger-btn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg></li>
+      </nav>
+    </header>
+    
+    
+    <main>
+        <div class="hero-section">
+            <div>
+                <h1 class="hero-heading">Hi, I am Iyanuoluwa Pelumi</h1>
+                <p class="hero-text">Front-End Developer | UI/UX Enthusiast | Passionate Coder</p>
+                <div class="cta">
+                    <p><a class="cta-btn" href="#contact">Contact Me</a></p>
+                    <p><a href="./assets/Psuedo CV.docx" class="cv-btn" download="Psuedo CV">Download CV</a></p>
+                </div>
+            </div>
+
+            <img
+                class="hero-img"
+                src="./assets/cartoon about nw.png"
+                alt="Iyanuoluwa Pelumi's img"
+            />
+        </div>
+
+        <div class="arrow-up">
+            <img onclick="scrollUp ()" class="arrow-img1" src="./assets/up-arrows.png" alt="arrow up">
+            <a href="https://wa.me/+2348104905360" target="_blank" rel="noopener noreferrer" class="arrow-icon2">
+                <img class="arrow-img" src="./assets/whatsapp logo.png" alt="whatsapp logo">
+            </a>
+        </div>
+    </main>
+
+        <section class="about-container">
+            <h2 class="about-title">ABOUT ME</h2>
+            <div class="about">
+                <img src="./assets/about.jpg" alt="my img">
+                <p class="about-text">
+                    I'm a front-end web developer passionate about creating responsive,
+                    user-friendly, and visually striking websites. I specialize in tools
+                    like React.js, JavaScript, and HTML/CSS to turn ideas and
+                    designs into interactive web experiences. <br><br>
+                    Whether it's a landing page, dashboard, or full-blown web app, I enjoy
+                    solving problems through clean code and attention to detail. I've
+                    built personal and freelance projects that focus on speed, mobile-first
+                    design, and modern UI/UX principles. <br><br>
+                    I'm currently open to remote job opportunities, freelance gigs, and
+                    collaborative tech projects. I'm also building my presence in the dev community by sharing tips,
+                    tutorials, and lessons from my journey. <br><br>
+                    Let's connect if you're looking to work with a developer who's eager,
+                    reliable, and always learning. <br>
+                    <a id="hire-btn" href="https://wa.me/+2348104905360" target="_blank" rel="noopener noreferrer">Connect</a>
+                </p>
+            </div>
+                
+        </section>
+    
+
+    <!----------SERVICES-------->
+    <section class="services-section" id="services">
+        <h2>MY SERVICES</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="./assets/web dev.png" alt="Web Development" />
+                <h3>Front-End Web Development</h3>
+                <p>Building responsive and interactive user interfaces.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="./assets/web design.png" alt="Web Design" />
+                <h3>Website Redesign</h3>
+                <p>Revamping old websites for better performance and look.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="./assets/writing.png" alt="Writing" />
+                <h3>Content Writing</h3>
+                <p>Delivering clear, engaging content for blogs, portfolios, and more.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="./assets/landing pag.png" alt="Landing page" />
+                <h3>Landing Page Development</h3>
+                <p>High-converting landing pages using HTML/CSS or React.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="./assets/review.png" alt="Review" />
+                <h3>Bug Fixes & Code Review</h3>
+                <p>Fix layout issues, clean up CSS, and improve code quality.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="./assets/portfolio.png" alt="Teaching" />
+                <h3>Portfolio & Personal Sites</h3>
+                <p>Custom web presence for freelancers, students, and professionals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!----------SKILLS-------->
+    <section class="skills-section" id="skills">
+        <div class="skills-header">
+            <h2>SKILLS</h2>
+            <p>Creative | Innovative | Transformative</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="./assets/html.png" alt="HTML logo" />
+                <h5>HTML</h5>
+                <p>I write clean, semantic, and scalable HTML for accessible web structures, ensuring responsive and SEO-friendly pages.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="./assets/css.png" alt="CSS logo" />
+                <h5>CSS</h5>
+                <p>I design elegant, responsive interfaces using Flexbox, Grid, transitions, and modern design systems.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="./assets/javascript.png" alt="JavaScript logo" />
+                <h5>JavaScript</h5>
+                <p>I add interactivity and logic with JS—from DOM manipulation to building dynamic UI components.</p>            </div>
+
+            <div class="skill-card">
+                <img src="./assets/React.png" alt="React logo" />
+                <h5>React</h5>
+                <p>I build modular UIs with React, using hooks, state, and props to craft smooth front-end experiences.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="./assets/version control.png" alt="Git logo" />
+                <h5>Version Control</h5>
+                <p>I manage and collaborate on projects using Git & GitHub for clean, traceable development workflows.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="./assets/responseivee.png" alt="Responsive design icon" />
+                <h5>Responsive Design</h5>
+                <p>I design mobile-first layouts with media queries and flexible grids for all screen sizes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!----------BLOG-------->
+    <article class="blog-section" id="blog">
+        <div class="blog-header">
+            <h2>Fuel Your Curiosity</h2>
+            <p>Smart reads for creators, thinkers, and doers.</p>
+        </div>
+
+        <div class="blog-grid">
+            <div class="blog-card">
+                <img src="./assets/cybersecurity.jpg" alt="cybersecurity img" class="blog-img" />
+                <div class="read">
+                    <p class="read-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5"/>
+                        </svg> <small>May 15, 2025</small>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        </svg> <small>3 min. read.</small>
+                    </p>
+                </div>
+                <h5>Cybersecurity</h5>
+                <p>The rise in digital cyberattacks has made cybersecurity a priority for businesses and individuals. For businesses, cybercrimes can lead to financial loss, operational disruption, data breaches, and a loss of trust, while individuals face identity theft, financial fraud, and privacy invasion...</p>
+                <a href="https://www.cisco.com/site/us/en/learn/topics/security/what-is-cybersecurity.html" target="_blank" rel="noopener noreferrer" class="blog-link">Read more >>></a>
+            </div>
+
+            <div class="blog-card">
+                <img src="./assets/frontend.jpg" alt="frontend img" class="blog-img" />
+                <div class="read">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5"/>
+                        </svg> <small>12 April, 2025</small>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        </svg> <small>3 min. read.</small>
+                    </p>
+                </div>
+                <h5>Frontend vs Backend Development</h5>
+                <p>In web development, the terms frontend and backend are essential for understanding how websites and web applications work. These two components make up the core of any modern web application, each serving a unique purpose...</p>
+                <a href="https://www.geeksforgeeks.org/frontend-vs-backend/" target="_blank" rel="noopener noreferrer" class="blog-link">Read More >>></a>
+            </div>
+
+            <div class="blog-card">
+                <img src="./assets/AI.jpg" alt="AI img" class="blog-img" />
+                <div class="read">
+                    <p class="read-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">                         <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5"/>
+                      </svg> <small>12 Jan, 2025</small>
+                      </p>
+                      <p>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                          </svg> <small>5 min. read.</small>
+                      </p>
+                  </div>
+                  <h5>The Future of AI: How Artificial Intelligence Will Change the World</h5>
+                  <p>Innovations in the field of artificial intelligence continue to shape the future of humanity across nearly every industry. AI is already the main driver of emerging technologies like big data, robotics and IoT, and generative AI has further expanded the possibilities and popularity of AI...</p>
+                  <a href="https://builtin.com/artificial-intelligence/artificial-intelligence-future" target="_blank" rel="noopener noreferrer" class="blog-link">Read More >>></a>
+              </div>
+          </div>
+    </article>
+  
+      <!----------CONTACT-------->
+      <section class="contact-container" id="contact">
+          <h2 class="contact-title">Let's Get In Touch</h2>
+          <p class="contact-text">
+                  Do you a project in mind? Looking to collaborate or just want to connect? I'd love to hear from you. Let's build something great together.
+              </p>
+      <div class="contact--container"> 
+        <div class="contact-info">
+            <div class="contact-id">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+               <p>
+                08104905360 <br />
+                08053739358
+               </p>
+            </div>
+
+            <div class="contact-id">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                </svg>
+                <p>
+                 ojoiyanuoluwa1@gmail.com <br />
+                 ojoiyanuoluwah@gmail.com
+                </p>
+            </div>
+
+            <div class="contact-id">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                </svg>
+                <p>
+                 Ibadan, Oyo Nigeria
+                </p>
+            </div>
+        </div>
+        
+        <form action="https://formspree.io/f/xvgrwobz" method="POST">
+
+          <div class="form-container">
+            <h2 class="form-fill">Or fill out the form below</h2>
+            <div class="form-text">
+                <input type="text" name="First Name" placeholder="First Name" required>
+                <input type="text" name="Last Name" placeholder="Last Name" required/>
+            </div>
+
+            <div class="form-email">
+                <input type="email" name="Email Address" placeholder="Your Email" required/>
+                 <input type="tel" placeholder="Phone Number" required/>
+            </div>
+
+            <div class="form-message">
+                <textarea name="Message" rows="7" placeholder="Message" maxlength="500" required id=""></textarea>
+            </div>
+
+            <div class="radio-container"> 
+                 <p>Description that fits you:</p>
+                 <div class="radio-btn">
+                  <label for="hire">Hire</label>
+                  <input type="radio" class="radio" value="hire" name="Purpose" required />
+                  <label for="collaborate">Collaborate</label>
+                  <input type="radio" class="radio" value="collaborate" name="Purpose" required />
+                  <label for="others">Others</label>
+                  <input type="radio" class="radio" value="others" name="Purpose" required />
+                 </div>
+                 <button class="submit-btn">Submit Form</button>
+              </div>
+             </div>
+        </form>
+       </div> 
+    </section>
+  
+      <!----------FOOTER-------->
+      <footer class="footer">
+              <div class="footer-container">
+                  <div class="footer1">
+                      <p class="footer-logo">PELLU<span>X</span></p>
+                      <p class="footer-logo-text">...your friendly neighborhood web developer.</p>
+                      <div class="footer1" id="footer-icon">
+                      <a href="https://web.facebook.com/ojoiyanuoluwa.pelumi" target="_blank" rel="noopener noreferrer" class="footer-icon">
+                        <img src="./assets/facebook.png" alt="facebook logo">
+                    </a>
+
+                    <a href="https://wa.me/+2348104905360" target="_blank" rel="noopener noreferrer" class="footer-icon">
+                        <img src="./assets/whatsapp logo.png" alt="whatsapp logo">
+                    </a>
+
+                    <a href="https://www.instagram.com/iyanuoluwa_pelumi/" target="_blank" rel="noopener noreferrer" class="footer-icon">
+                        <img src="./assets/instagram.png" alt="instagram logo">
+                    </a> 
+
+                    <a href="https://www.linkedin.com/in/iyanuoluwa-pelumi-964787240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="footer-icon">
+                        <img src="./assets/linkedin.png" alt="linkend logo">
+                    </a>
+
+                    <a href="https://github.com/Iyanuoluwa-Pelumi" target="_blank" rel="noopener noreferrer" class="footer-icon">
+                        <img src="./assets/github.png" alt="github logo">
+                    </a>
+                  </div>
+                  </div>
+  
+                      <div class="footer2">
+                       <h4 class="footer-link">Quick Links</h4>
+                       <ul class="footer-menu">
+                       <li><a class="footer-item" href="./index.html">Home</a></li>
+                       <li><a class="footer-item" href="#services">Services</a></li>
+                       <li><a class="footer-item" href="#skills">Skills</a></li>
+                       <li><a class="footer-item" href="#blog">Blog</a></li>
+                      </ul>
+                      </div>
+
+                      <div class="footer3">
+                        <h4 class="footer-services">Services</h4>
+                        <ul class="footer-menu">
+                          <li class="footer-item">Front-End Web Development</li>
+                          <li class="footer-item">Website Redesign</li>
+                          <li class="footer-item">Content Writing</li>
+                          <li class="footer-item">Landing Page Development</li>
+                          <li class="footer-item">Bug Fixes & Code Review</li>
+                          <li class="footer-item">Portfolio & Personal Sites</li>
+                         </ul>
+                      </div>
+              </div> <br><br><hr>
+                      <div class="copyright">
+                          <small> &#0169 2025 Iyanuoluwa Pelumi. All Rights Reserved.</small>
+                      </div>
+          </footer>
+
+  
+      <script src="index.js"></script>
+  </body>
+  </html>
+  
+  
