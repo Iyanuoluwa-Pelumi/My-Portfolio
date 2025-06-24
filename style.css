@@ -778,6 +778,10 @@ accent-color: chocolate;
     display: flex;
   }
 
+  	.sidebar{
+		width: 50%;
+  }
+
   .nav-menu {
     display: none;
   }
@@ -860,7 +864,7 @@ accent-color: chocolate;
  /*------------- CONTACT SECTION ---------*/
 
   .contact-title{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   .contact-text {
