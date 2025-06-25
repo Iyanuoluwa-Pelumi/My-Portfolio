@@ -1,196 +1,276 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Iyanuoluwa Pelumi | Front-End Developer passionate about building responsive and elegant websites." />
+    <meta
+      name="description"
+      content="Iyanuoluwa Pelumi | Front-End Developer passionate about building responsive and elegant websites."
+    />
     <meta property="og:title" content="Iyanuoluwa Pelumi Portfolio" />
-    <meta property="og:description" content="Passionate front-end developer building stunning web experiences with React, HTML/CSS, and JS." />
+    <meta
+      property="og:description"
+      content="Passionate front-end developer building stunning web experiences with React, HTML/CSS, and JS."
+    />
     <meta property="og:image" content="./assets/cartoon about nw.png" />
     <meta name="author" content="Iyanuoluwa Pelumi" />
     <title>Iyanuoluwa Pelumi</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.webp">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.webp" />
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-</head>
+  </head>
 
-<body>
-    <!----------HEADER-------->
-    <header class="header-container container" >
-        <div class="nav-logo">
-            <p><a href="./index.html">PELLU<span>X</span></a></p>
-        </div>
+  <body>
+    <!-- HEADER -->
+    <header class="header-container container">
+      <div class="nav-logo">
+        <p><a href="./index.html">PELLU<span>X</span></a></p>
+      </div>
 
-        <!----------- NAV MENU ---------->
-       <nav>
-        <ul class="sidebar" onclick="redirect ()">
-            <li onclick="hideSidebar ()" class="menu-close"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-</svg></li>
-            <li onclick="redirect ()"><a class="nav-list" href="./index.html">Home</a></li>
-            <li onclick="redirect ()"><a class="nav-list" href="#services">Services</a></li>
-            <li onclick="redirect ()"><a class="nav-list" href="#skills">Skills</a></li>
-            <li onclick="redirect ()"><a class="nav-list" href="#contact">Contact</a></li>
+      <!-- NAV MENU (Sidebar) -->
+      <nav>
+        <ul class="sidebar" onclick="redirect()">
+          <li onclick="hideSidebar()" class="menu-close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+              />
+            </svg>
+          </li>
+          <li onclick="redirect()"><a class="nav-list" href="./index.html">Home</a></li>
+          <li onclick="redirect()"><a class="nav-list" href="#services">Services</a></li>
+          <li onclick="redirect()"><a class="nav-list" href="#skills">Skills</a></li>
+          <li onclick="redirect()"><a class="nav-list" href="#contact">Contact</a></li>
         </ul>
-       </nav>
+      </nav>
 
-       <nav>
+      <!-- NAV MENU (Main) -->
+      <nav>
         <ul class="nav-menu">
-            <li><a class="nav-list" href="./index.html">Home</a></li>
-            <li><a class="nav-list" href="#services">Services</a></li>
-            <li><a class="nav-list" href="#skills">Skills</a></li>
-            <li><a class="nav-list" href="#contact">Contact</a></li>
+          <li><a class="nav-list" href="./index.html">Home</a></li>
+          <li><a class="nav-list" href="#services">Services</a></li>
+          <li><a class="nav-list" href="#skills">Skills</a></li>
+          <li><a class="nav-list" href="#contact">Contact</a></li>
         </ul>
-        <li onclick="showSidebar ()" class="hamburger-btn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-</svg></li>
+        <div onclick="showSidebar()" class="hamburger-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </div>
       </nav>
     </header>
-    
-    
+
+    <!-- HERO SECTION -->
     <main>
-        <div class="hero-section">
-            <div>
-                <h1 class="hero-heading">Hi, I am Iyanuoluwa Pelumi</h1>
-                <p class="hero-text">Front-End Developer | UI/UX Enthusiast | Passionate Coder</p>
-                <div class="cta">
-                    <p><a class="cta-btn" href="#contact">Contact Me</a></p>
-                    <p><a href="./assets/Psuedo CV.docx" class="cv-btn" download="Psuedo CV">Download CV</a></p>
-                </div>
-            </div>
-
-            <img
-                class="hero-img"
-                src="./assets/Hero Img.webp"
-                alt="Iyanuoluwa Pelumi's img"
-            />
+      <div class="hero-section">
+        <div>
+          <h1 class="hero-heading">Hi, I am Iyanuoluwa Pelumi</h1>
+          <p class="hero-text">
+            Front-End Developer | UI/UX Enthusiast | Passionate Coder
+          </p>
+          <div class="cta">
+            <p><a class="cta-btn" href="#contact">Contact Me</a></p>
+            <p>
+              <a
+                href="./assets/Psuedo CV.docx"
+                class="cv-btn"
+                download="Psuedo CV"
+                >Download CV</a
+              >
+            </p>
+          </div>
         </div>
+        <img
+          class="hero-img"
+          src="./assets/Hero Img.webp"
+          alt="Iyanuoluwa Pelumi's img"
+        />
+      </div>
 
-        <div class="arrow-up">
-            <img onclick="scrollUp ()" class="arrow-img1" src="./assets/up-arrows.png" alt="arrow up">
-            <a href="https://wa.me/+2348104905360" target="_blank" rel="noopener noreferrer" class="arrow-icon2">
-                <img class="arrow-img" src="./assets/whatsapp logo.png" alt="whatsapp logo">
-            </a>
-        </div>
+      <div class="arrow-up">
+        <img
+          onclick="scrollUp()"
+          class="arrow-img1"
+          src="./assets/up-arrows.png"
+          alt="arrow up"
+        />
+        <a
+          href="https://wa.me/+2348104905360"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="arrow-icon2"
+        >
+          <img
+            class="arrow-img"
+            src="./assets/whatsapp logo.png"
+            alt="whatsapp logo"
+          />
+        </a>
+      </div>
     </main>
 
-        <section class="about-container">
-            <h2 class="about-title">ABOUT ME</h2>
-            <div class="about">
-                <img src="./assets/About Img.webp" alt="my img">
-                <p class="about-text">
-                    I'm a front-end web developer passionate about creating responsive,
-                    user-friendly, and visually striking websites. I specialize in tools
-                    like React.js, JavaScript, and HTML/CSS to turn ideas and
-                    designs into interactive web experiences. <br><br>
-                    Whether it's a landing page, dashboard, or full-blown web app, I enjoy
-                    solving problems through clean code and attention to detail. I've
-                    built personal and freelance projects that focus on speed, mobile-first
-                    design, and modern UI/UX principles. <br><br>
-                    I'm currently open to remote job opportunities, freelance gigs, and
-                    collaborative tech projects. I'm also building my presence in the dev community by sharing tips,
-                    tutorials, and lessons from my journey. <br><br>
-                    Let's connect if you're looking to work with a developer who's eager,
-                    reliable, and always learning. <br>
-                    <a id="hire-btn" href="https://wa.me/+2348104905360" target="_blank" rel="noopener noreferrer">Connect</a>
-                </p>
-            </div>
-                
-        </section>
-    
-
-    <!----------SERVICES-------->
-    <section class="services-section" id="services">
-        <h2>MY SERVICES</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="./assets/undraw_programming_65t2.svg" alt="Web Development" />
-                <h3>Front-End Web Development</h3>
-                <p>Building responsive and interactive user interfaces.</p>
-            </div>
-
-            <div class="service-card">
-                <img src="./assets/undraw_responsive_csbt.svg" alt="Web Design" />
-                <h3>Website Redesign</h3>
-                <p>Revamping old websites for better performance and look.</p>
-            </div>
-
-            <div class="service-card">
-                <img src="./assets/undraw_book-writer_ri5u.svg" alt="Writing" />
-                <h3>Content Writing</h3>
-                <p>Delivering clear, engaging content for blogs, portfolios, and more.</p>
-            </div>
-
-            <div class="service-card">
-                <img src="./assets/undraw_landing-page_tsx8 (1).svg" alt="Landing page" />
-                <h3>Landing Page Development</h3>
-                <p>High-converting landing pages using HTML/CSS or React.</p>
-            </div>
-
-            <div class="service-card">
-                <img src="./assets/undraw_code-review_ept3.svg" alt="Review" />
-                <h3>Bug Fixes & Code Review</h3>
-                <p>Fix layout issues, clean up CSS, and improve code quality.</p>
-            </div>
-
-            <div class="service-card">
-                <img src="./assets/undraw_color-schemes_r29x.svg" alt="Teaching" />
-                <h3>Portfolio & Personal Sites</h3>
-                <p>Custom web presence for freelancers, students, and professionals.</p>
-            </div>
-        </div>
+    <!-- ABOUT SECTION -->
+    <section class="about-container">
+      <h2 class="about-title">ABOUT ME</h2>
+      <div class="about">
+        <img src="./assets/About Img.webp" alt="my img" />
+        <p class="about-text">
+          I'm a front-end web developer passionate about creating responsive,
+          user-friendly, and visually striking websites. I specialize in tools
+          like React.js, JavaScript, and HTML/CSS to turn ideas and designs
+          into interactive web experiences.
+          <br /><br />
+          Whether it's a landing page, dashboard, or full-blown web app, I
+          enjoy solving problems through clean code and attention to detail.
+          I've built personal and freelance projects that focus on speed,
+          mobile-first design, and modern UI/UX principles.
+          <br /><br />
+          I'm currently open to remote job opportunities, freelance gigs, and
+          collaborative tech projects. I'm also building my presence in the dev
+          community by sharing tips, tutorials, and lessons from my journey.
+          <br /><br />
+          Let's connect if you're looking to work with a developer who's eager,
+          reliable, and always learning.
+          <br />
+          <a
+            id="hire-btn"
+            href="https://wa.me/+2348104905360"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Connect</a
+          >
+        </p>
+      </div>
     </section>
 
-    <!----------SKILLS-------->
-    <section class="skills-section" id="skills">
-        <div class="skills-header">
-            <h2>SKILLS</h2>
-            <p>Creative | Innovative | Transformative</p>
-        </div>
+ <!-- SERVICES -->
+<section class="services-section" id="services">
+  <h2>MY SERVICES</h2>
+  <div class="services-grid">
+      <div class="service-card">
+          <img src="./assets/undraw_programming_65t2.svg" alt="Web Development" />
+          <h3>Front-End Web Development</h3>
+          <p>Building responsive and interactive user interfaces.</p>
+      </div>
 
-        <div class="skills-grid">
-            <div class="skill-card">
-                <img src="./assets/html.png" alt="HTML logo" />
-                <h5>HTML</h5>
-                <p>I write clean, semantic, and scalable HTML for accessible web structures, ensuring responsive and SEO-friendly pages.</p>
-            </div>
+      <div class="service-card">
+          <img src="./assets/undraw_responsive_csbt.svg" alt="Web Design" />
+          <h3>Website Redesign</h3>
+          <p>Revamping old websites for better performance and look.</p>
+      </div>
 
-            <div class="skill-card">
-                <img src="./assets/css.png" alt="CSS logo" />
-                <h5>CSS</h5>
-                <p>I design elegant, responsive interfaces using Flexbox, Grid, transitions, and modern design systems.</p>
-            </div>
+      <div class="service-card">
+          <img src="./assets/undraw_book-writer_ri5u.svg" alt="Writing" />
+          <h3>Content Writing</h3>
+          <p>Delivering clear, engaging content for blogs, portfolios, and more.</p>
+      </div>
 
-            <div class="skill-card">
-                <img src="./assets/javascript.png" alt="JavaScript logo" />
-                <h5>JavaScript</h5>
-                <p>I add interactivity and logic with JS—from DOM manipulation to building dynamic UI components.</p>            </div>
+      <div class="service-card">
+          <img src="./assets/undraw_landing-page_tsx8 (1).svg" alt="Landing page" />
+          <h3>Landing Page Development</h3>
+          <p>High-converting landing pages using HTML/CSS or React.</p>
+      </div>
 
-            <div class="skill-card">
-                <img src="./assets/React.png" alt="React logo" />
-                <h5>React</h5>
-                <p>I build modular UIs with React, using hooks, state, and props to craft smooth front-end experiences.</p>
-            </div>
+      <div class="service-card">
+          <img src="./assets/undraw_code-review_ept3.svg" alt="Review" />
+          <h3>Bug Fixes & Code Review</h3>
+          <p>Fix layout issues, clean up CSS, and improve code quality.</p>
+      </div>
 
-            <div class="skill-card">
-                <img src="./assets/version control.png" alt="Git logo" />
-                <h5>Version Control</h5>
-                <p>I manage and collaborate on projects using Git & GitHub for clean, traceable development workflows.</p>
-            </div>
+      <div class="service-card">
+          <img src="./assets/undraw_color-schemes_r29x.svg" alt="Teaching" />
+          <h3>Portfolio & Personal Sites</h3>
+          <p>Custom web presence for freelancers, students, and professionals.</p>
+      </div>
+  </div>
+</section>
 
-            <div class="skill-card">
-                <img src="./assets/responseivee.png" alt="Responsive design icon" />
-                <h5>Responsive Design</h5>
-                <p>I design mobile-first layouts with media queries and flexible grids for all screen sizes.</p>
-            </div>
-        </div>
-    </section>
+<!-- SKILLS -->
+<section class="skills-section" id="skills">
+  <div class="skills-header">
+      <h2>SKILLS</h2>
+      <p>Creative | Innovative | Transformative</p>
+  </div>
+
+  <div class="skills-grid">
+      <div class="skill-card">
+          <img src="./assets/html.png" alt="HTML logo" />
+          <h5>HTML</h5>
+          <p>
+              I write clean, semantic, and scalable HTML for accessible web structures,
+              ensuring responsive and SEO-friendly pages.
+          </p>
+      </div>
+
+      <div class="skill-card">
+          <img src="./assets/css.png" alt="CSS logo" />
+          <h5>CSS</h5>
+          <p>
+              I design elegant, responsive interfaces using Flexbox, Grid, transitions,
+              and modern design systems.
+          </p>
+      </div>
+
+      <div class="skill-card">
+          <img src="./assets/javascript.png" alt="JavaScript logo" />
+          <h5>JavaScript</h5>
+          <p>
+              I add interactivity and logic with JS—from DOM manipulation to building
+              dynamic UI components.
+          </p>
+      </div>
+
+      <div class="skill-card">
+          <img src="./assets/React.png" alt="React logo" />
+          <h5>React</h5>
+          <p>
+              I build modular UIs with React, using hooks, state, and props to craft
+              smooth front-end experiences.
+          </p>
+      </div>
+
+      <div class="skill-card">
+          <img src="./assets/version control.png" alt="Git logo" />
+          <h5>Version Control</h5>
+          <p>
+              I manage and collaborate on projects using Git & GitHub for clean,
+              traceable development workflows.
+          </p>
+      </div>
+
+      <div class="skill-card">
+          <img src="./assets/responseivee.png" alt="Responsive design icon" />
+          <h5>Responsive Design</h5>
+          <p>
+              I design mobile-first layouts with media queries and flexible grids for
+              all screen sizes.
+          </p>
+      </div>
+  </div>
+</section>
 
     <!----------BLOG-------->
     <article class="blog-section" id="blog">

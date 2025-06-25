@@ -1,4 +1,4 @@
-/* GENERAL SECTION */
+/* -------- GENERAL SECTION --------- */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   line-height: 1.6;
 }
 
-/* HEADER SECTION */
+/* ------------ HEADER SECTION ------------ */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -33,13 +33,13 @@ body {
   color: white;
 }
 
-span{
+span {
   color: white;
   font-weight: bolder;
   font-size: 1.9rem;
 }
 
-.nav-logo a{
+.nav-logo a {
   text-decoration: none;
   color: chocolate;
 }
@@ -48,36 +48,36 @@ span{
   position: relative;
 }
 
-.menu-close{
+.menu-close {
   cursor: pointer;
 }
 
-.hamburger-btn{
-	display: none;
-	cursor: pointer;
+.hamburger-btn {
+  display: none;
+  cursor: pointer;
 }
 
-.sidebar{
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 100vh;
-	width: 250px;
-	z-index: 1000;
-	background-color: #03203f;
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 1000;
+  background-color: #03203f;
   opacity: 0.95;
-	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-	display: none;
-	flex-direction: column;
-	justify-content: start;
-	align-items: center;
-	gap: 3rem;
-	padding: 20px 0 0 20px;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+  padding: 20px 0 0 20px;
 }
 
-.sidebar li{
-	list-style: none;
-	padding: 1rem 0;
+.sidebar li {
+  list-style: none;
+  padding: 1rem 0;
 }
 
 .nav-menu {
@@ -94,7 +94,7 @@ span{
 }
 
 .nav-list::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -122,7 +122,7 @@ span{
   cursor: pointer;
 }
 
-.arrow-img1{
+.arrow-img1 {
   height: 30px;
   width: 30px;
   padding: 3px;
@@ -131,7 +131,7 @@ span{
   margin-bottom: 1rem;
 }
 
-.arrow-img{
+.arrow-img {
   height: 30px;
   width: 30px;
   text-decoration: none;
@@ -155,8 +155,7 @@ span{
   }
 }
 
-
-/* -------- HERO SECTION ----------- */
+/* --------HERO SECTION ----------- */
 .hero-section {
   display: flex;
   min-height: 100vh;
@@ -374,7 +373,7 @@ span{
   background-color: #f9f9f9;
   color: #03203f;
   text-align: center;
-	box-shadow: 0 2px 4px rgba(0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0.1);
 }
 
 .skills-header h2 {
@@ -435,7 +434,7 @@ span{
   text-align: left;
   position: relative;
   z-index: 2;
-	box-shadow: 0 2px 4px rgba(0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0.1);
 }
 
 .blog-header {
@@ -443,7 +442,7 @@ span{
 }
 
 .blog-header h2 {
-	color: chocolate;
+  color: chocolate;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
@@ -543,8 +542,7 @@ span{
   color: chocolate;
 }
 
-
-/* ------- CONTACT -------- */
+/*------- CONTACT -------- */
 .contact-container {
   padding: 70px 20px 40px 20px;
   justify-items: center;
@@ -563,7 +561,7 @@ span{
   color: #f9f9f9;
 }
 
-.contact--container{
+.contact--container {
   background-color: #011222;
   box-shadow: 0 2px 0px rgba(0, 0, 0.1);
   display: flex;
@@ -573,7 +571,7 @@ span{
   padding-bottom: 4rem;
 }
 
-.contact-info{
+.contact-info {
   display: flex;
   gap: 2rem;
   padding: 50px 50px 100px 50px;
@@ -583,23 +581,23 @@ span{
 }
 
 .contact-id {
-color: #dddddd;
-gap: 50px;
+  color: #dddddd;
+  gap: 50px;
 }
 
-.contact-id svg{
+.contact-id svg {
   padding: 2px 5px;
   color: chocolate;
   background-color: #03203f;
 }
 
 /* ------- CONTACT FORM -------- */
-.form-fill{
-   text-align: start;
-   margin-bottom: 10px;
+.form-fill {
+  text-align: start;
+  margin-bottom: 10px;
 }
 
-.form-text input{
+.form-text input {
   border-radius: 7px;
   width: 49.5%;
   height: 50%;
@@ -608,7 +606,7 @@ gap: 50px;
   background-color: #dddddd;
 }
 
-.form-email input{
+.form-email input {
   border-radius: 7px;
   width: 49.5%;
   height: 50%;
@@ -617,11 +615,11 @@ gap: 50px;
   background-color: #dddddd;
 }
 
-.radio{
+.radio {
   cursor: pointer;
 }
 
-.form-message textarea{
+.form-message textarea {
   border-radius: 7px;
   width: 100%;
   height: 150%;
@@ -630,7 +628,7 @@ gap: 50px;
   background-color: #dddddd;
 }
 
-.radio-container{
+.radio-container {
   color: #dddddd;
   font-weight: 500;
   display: flex;
@@ -638,11 +636,11 @@ gap: 50px;
   align-items: center;
 }
 
-input[type="radio"]{
-accent-color: chocolate;
+input[type="radio"] {
+  accent-color: chocolate;
 }
 
-.submit-btn{
+.submit-btn {
   font-size: 0.95rem;
   border-radius: 7px;
   padding: 10px;
@@ -652,17 +650,15 @@ accent-color: chocolate;
   color: white;
 }
 
-.submit-btn:hover{
+.submit-btn:hover {
   color: black;
   scale: 1.1;
 }
 
-.submit-btn:active{
+.submit-btn:active {
   background-color: #ffb162;
 }
-
-
-/* ------- FOOTER -------- */
+/*------- FOOTER -------- */
 .footer {
   width: 100%;
   background-color: #03203f;
@@ -706,7 +702,7 @@ accent-color: chocolate;
   gap: 10px;
 }
 
-#footer-icon img{
+#footer-icon img {
   height: 25px;
   width: 25px;
 }
@@ -772,31 +768,30 @@ accent-color: chocolate;
 
 /* RESPONSIVE STYLE TABLET */
 @media (max-width: 1024px) {
-
-  /*------------- HEADER ---------*/
+  /*-------------HEADER ---------*/
   .hamburger-btn {
     display: flex;
   }
 
-  	.sidebar{
-		width: 50%;
+  .sidebar {
+    width: 50%;
   }
 
   .nav-menu {
     display: none;
   }
 
-  .arrow-img1{
-  height: 40px;
-  width: 40px;
-}
+  .arrow-img1 {
+    height: 40px;
+    width: 40px;
+  }
 
-.arrow-img{
-  height: 40px;
-  width: 40px;
-}
+  .arrow-img {
+    height: 40px;
+    width: 40px;
+  }
 
-   /*------------- HERO SECTION ---------*/
+  /*------------- HERO SECTION ---------*/
   .hero-section {
     flex-direction: column-reverse;
     min-height: 70vh;
@@ -811,77 +806,71 @@ accent-color: chocolate;
     flex-direction: column;
   }
 
-  
-   /*------------- ABOUT SECTION ---------*/
+  /*------------- ABOUT SECTION ---------*/
   .about {
     display: flex;
     flex-direction: column;
   }
 
-  .about img{
+  .about img {
     width: 450px;
     height: 400px;
   }
 
-  .about-text{
-  max-width: 900px;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #333;
-  text-align: left;
-  margin: auto;  
+  .about-text {
+    max-width: 900px;
+    line-height: 1.5;
+    color: #333;
+    text-align: left;
+    margin: auto;
   }
 
-  
   /*------------- SERVICES SECTION ---------*/
-  .services-grid{
+  .services-grid {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
   }
 
   .service-card img {
-  height: 300px;
-}
-
-   .skills-grid{
-    grid-template-columns: 1fr 1fr;
+    height: 300px;
   }
 
-
-   /*------------- BLOG SECTION ---------*/
-   .blog-grid{
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  /*------------- BLOG SECTION ---------*/
+  .blog-grid {
     grid-template-columns: 1fr;
   }
 
-   .blog-section{
+  .blog-section {
     padding: 70px 20px 40px 20px;
   }
 
-  .blog-card img{
+  .blog-card img {
     height: 400px;
   }
- 
- /*------------- CONTACT SECTION ---------*/
 
-  .contact-title{
-    font-size: 1.5rem;
+  /*------------- CONTACT SECTION ---------*/
+
+  .contact-title {
+    font-size: 1.8rem;
   }
 
   .contact-text {
-  margin-bottom: 40px;
-  font-size: 0.90rem;
-  max-width: 600px;
-}
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+    max-width: 600px;
+  }
 
- .contact-info{
-  display: flex;
-  gap: 4rem;
-  padding: 50px 100px 100px 100px;
-}
-
+  .contact-info {
+    display: flex;
+    gap: 4rem;
+    padding: 50px 100px 100px 100px;
+  }
 
   /*------------- FOOTER SECTION ---------*/
-  .footer-container{
+  .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -892,31 +881,30 @@ accent-color: chocolate;
     gap: 5px;
   }
 
-  .footer2{
+  .footer2 {
     order: 1;
   }
 
-  .footer1{
+  .footer1 {
     order: 2;
   }
 }
 
-
-/* ---------- RESPONSIVE STYLE PHONE ------- */
-@media (max-width: 600px){
-
-	.sidebar{
-		width: 100%;
+/*----------RESPONSIVE STYLE PHONE ------- */
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
   }
 
-  .arrow-img1{
-  height: 30px;
-  width: 30px;}
+  .arrow-img1 {
+    height: 30px;
+    width: 30px;
+  }
 
-.arrow-img{
-  height: 30px;
-  width: 30px;
-}
+  .arrow-img {
+    height: 30px;
+    width: 30px;
+  }
 
   /*------------- HERO SECTION ---------*/
   .hero-section {
@@ -926,15 +914,16 @@ accent-color: chocolate;
   }
 
   /*------------- ABOUT SECTION ---------*/
-  .about-container{
-   padding: 70px 0 40px 0;
+  .about-container {
+    padding: 70px 0 40px 0;
   }
 
-  .about-text{
+  .about-text {
     max-width: 100%;
+    font-size: 1rem;
   }
 
-  .about{
+  .about {
     gap: 30px;
   }
 
@@ -943,8 +932,8 @@ accent-color: chocolate;
     height: 100%;
   }
 
-/*------------- SERVICES SECTION ---------*/
-  .services-section{
+  /*------------- SERVICES SECTION ---------*/
+  .services-section {
     padding: 70px 20px 40px 20px;
   }
 
@@ -953,38 +942,37 @@ accent-color: chocolate;
     margin-bottom: 20px;
   }
 
-  .services-grid{
+  .services-grid {
     grid-template-columns: repeat(2, 1fr);
     max-width: none;
     gap: 15px;
   }
 
-  .service-card{
+  .service-card {
     padding: 16px;
     border-radius: 30px;
   }
 
   .service-card img {
-  height: 200px;
-  margin-bottom: 0;
-}
+    height: 200px;
+    margin-bottom: 0;
+  }
 
-  .service-card h3{
+  .service-card h3 {
     font-size: 1.1rem;
     margin-top: 0;
     line-height: 1.3;
     text-align: start;
   }
 
-  .service-card p{
-    font-size: 0.80rem;
+  .service-card p {
+    font-size: 0.8rem;
     text-align: start;
     margin-top: 2px;
   }
 
-
-  /*------------- SKILL SECTION ---------*/
-  .skills-section{
+  /*-------------SKILL SECTION ---------*/
+  .skills-section {
     padding: 70px 20px 40px 20px;
   }
 
@@ -993,17 +981,15 @@ accent-color: chocolate;
     margin-bottom: 5px;
   }
 
-  .skills-header p{
+  .skills-header p {
     margin-bottom: 20px;
   }
 
-  .skills-grid{
+  .skills-grid {
     grid-template-columns: 1fr;
   }
-  
-
-  /*------------- BLOG SECTION ---------*/
-  .blog-section{
+  /*-------------BLOG SECTION ---------*/
+  .blog-section {
     padding: 70px 20px 40px 20px;
   }
   .blog-header h2 {
@@ -1011,33 +997,32 @@ accent-color: chocolate;
     margin-bottom: 5px;
   }
 
-  .blog-header p{
+  .blog-header p {
     margin-bottom: 20px;
   }
 
-  .blog-grid{
+  .blog-grid {
     grid-template-columns: 1fr;
   }
 
   .blog-card {
-   padding: 20px 10px;
+    padding: 20px 10px;
   }
 
-   .blog-card img{
+  .blog-card img {
     height: 250px;
   }
- 
 
-  .blog-card h5{
+  .blog-card h5 {
     font-size: 1.1rem;
   }
 
-  .read-text{
+  .read-text {
     font-size: 10rem;
   }
 
-  .blog-card p{
-    font-size: 0.90rem;
+  .blog-card p {
+    font-size: 0.9rem;
   }
 
   .blog-link {
@@ -1045,27 +1030,27 @@ accent-color: chocolate;
   }
 
   /*------------- CONTACT SECTION ---------*/
-  .contact-container{
+  .contact-container {
     padding: 70px 20px 30px 20px;
     justify-items: start;
   }
 
-  .contact-title{
+  .contact-title {
     font-size: 1.2rem;
   }
 
-  .contact-text{
-    font-size: 0.90rem;
+  .contact-text {
+    font-size: 0.9rem;
     max-width: 100%;
     margin-bottom: 20px;
     text-align: start;
   }
 
-  .contact--container{
+  .contact--container {
     align-items: flex-start;
   }
 
-  .contact-info{
+  .contact-info {
     justify-items: flex-start;
     padding: 20px 30px 20px 0;
     gap: 1.5rem;
@@ -1073,39 +1058,37 @@ accent-color: chocolate;
     margin-bottom: 0.7rem;
   }
 
-
-  /*------------- FORM SECTION ---------*/
-  .form-fill{
+  /*-------------FORM SECTION ---------*/
+  .form-fill {
     font-size: 1.2rem;
   }
 
-  .form-text input{
+  .form-text input {
     width: 100%;
   }
 
-  .form-email input{
+  .form-email input {
     width: 100%;
   }
 
-  .radio-container{
+  .radio-container {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 5px;
   }
 
-  .radio-btn{
-   display: flex;
-   gap: 10px;
-   align-items: center;
+  .radio-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
   }
 
-  .submit-btn{
+  .submit-btn {
     width: 100%;
   }
 
-  .footer-container{
+  .footer-container {
     grid-template-columns: 1fr;
   }
-
 }
